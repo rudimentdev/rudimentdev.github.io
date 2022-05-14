@@ -1,0 +1,21 @@
+---
+layout: layout.html
+pagination:
+    data: collections
+    size: 1
+    alias: tag
+    filter:
+        - all
+        - posts
+permalink: /tags/{{ tag }}/
+---
+
+<h1>Tagged "{{ tag }}"</h1>
+
+<ol>
+    {% for post in collections[tag] reversed %}
+    <li>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a> - <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+    </li>
+    {% endfor %}
+</ol>

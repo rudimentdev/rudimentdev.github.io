@@ -1,0 +1,14 @@
+---
+layout: layout.html
+---
+
+<h1>{{ title }}</h1>
+<time>{{ date | date: "%Y-%m-%d" }}</time>
+
+{{ content }}
+
+{% for tag in tags %}
+{% if tag != 'posts' %}
+<a href="/tags/{{ tag }}">&#x1F3F7;&thinsp;{{ tag }}</a>&nbsp;
+{% endif %}
+{% endfor %}
