@@ -2,7 +2,9 @@
   "name": "rudiment.dev",
   "version": "1.0.0",
   "description": "Rudi's personal website for blog, musings, junks, etc..",
-  "scripts": {},
+  "scripts": {
+    "build": "eleventy"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rudimentdev/rudimentdev.github.io.git"
