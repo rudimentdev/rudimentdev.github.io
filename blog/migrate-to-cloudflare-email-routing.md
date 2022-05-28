@@ -1,7 +1,6 @@
 ---
 title: Migrate to Cloudflare Email Routing
 date: 2022-05-15 12:36:18 +7
-snippet: Migrating from free G Suite legacy for custom domain email service needs
 tags:
     - cloudflare
     - email routing
