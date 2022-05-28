@@ -3,12 +3,16 @@ layout: layout.html
 ---
 
 <h1>{{ title }}</h1>
-<time>{{ date | date: "%Y-%m-%d" }}</time>
+<i>
+    <time>{{ date | date: "%e %b %Y" }}</time>
+</i>
 
 {{ content }}
 
-{% for tag in tags %}
-{% if tag != 'posts' %}
-<a href="/tags/{{ tag }}">#{{ tag }}</a>&nbsp;
-{% endif %}
-{% endfor %}
+<small>
+    {% for tag in tags %}
+    {% if tag != 'posts' %}
+    <a href="/tags/{{ tag }}">#{{ tag }}</a>&nbsp;
+    {% endif %}
+    {% endfor %}
+</small>
